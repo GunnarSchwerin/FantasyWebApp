@@ -10,7 +10,7 @@ class GoogleSheetsUploader
     static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
     static readonly string SpreadsheetId = "1GZesYn5QZQHMYdxecpzPRhJ1eFNot2Dgds0dZi7XFSE";
     static readonly string WRFilePath = @"C:\Users\ptige\Documents\FantasyWebApp\Scraper\WR Data.txt";
-    static readonly string QBFilePath = @"C:\Users\ptige\Documents\FantasyWebApp\Scraper\QB Data.txt";
+    static readonly string QBFilePath = @"C:\Users\ptige\Documents\FantasyWebApp\Scraper\QB Data 2026.txt";
     static readonly string TEFilePath = @"C:\Users\ptige\Documents\FantasyWebApp\Scraper\TE Data.txt";
     static readonly string RBFilePath = @"C:\Users\ptige\Documents\FantasyWebApp\Scraper\RB Data.txt";
 
@@ -35,9 +35,10 @@ class GoogleSheetsUploader
 
         Dictionary<string, List<object>> headersMap = new Dictionary<string, List<object>>
         {
+            // find source for the data
             { "WR", new List<object> { "RK", "Name", "Team", "Pos", "GP", "TGTS", "Rec", "Catch%", "YDs", "TDS", "Long", "YDs/TGT", "YDs/Rec", "ATT", "YDs", "AVG", "TD", "FUM", "LOST", "FPTS/G", "FPTS" } },
             { "TE", new List<object> { "RK", "Name", "Team", "Pos", "GP", "TGTS", "Rec", "Catch%", "YDs", "TDS", "Long", "YDs/TGT", "YDs/Rec", "ATT", "YDs", "AVG", "TD", "FUM", "LOST", "FPTS/G", "FPTS" } },
-            { "QB", new List<object> { "RK", "Name", "Team", "Pos", "GP", "CMP", "ATT", "CMP%", "YDs", "TDS", "INT", "RATING", "ATT", "YDs", "AVG", "TD", "FPTS/G", "FPTS" } },
+            { "QB", new List<object> { "RK", "Name", "Team", "Pos", "GP", "CMP", "ATT", "CMP%", "YDs", "AVG", "TDS", "INT", "LONG", "SACK", "RATING", "ATT", "YDs", "AVG", "TD", "FPTS/G", "FPTS" } },
             { "RB", new List<object> { "RK", "Name", "Team", "Pos", "GP", "ATT", "YDs", "AVG", "TDS", "TGTS", "Rec", "YDs", "TDS", "FPTS/G", "FPTS" } }
         };
 
@@ -92,7 +93,7 @@ class GoogleSheetsUploader
                 else
                     currentRow.Add(value); // Keeps string (like Name or Team)
             }
-        }
+        } 
 
         if (currentRow.Count > 0)
         {
