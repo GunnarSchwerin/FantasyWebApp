@@ -9,10 +9,10 @@ class GoogleSheetsUploader
 {
     static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
     static readonly string SpreadsheetId = "1GZesYn5QZQHMYdxecpzPRhJ1eFNot2Dgds0dZi7XFSE";
-    static readonly string WRFilePath = @"C:\Users\ptige\Documents\FantasyWebApp\Scraper\WR Data.txt";
+    static readonly string WRFilePath = @"C:\Users\ptige\Documents\FantasyWebApp\Scraper\WR Data 2026.txt";
     static readonly string QBFilePath = @"C:\Users\ptige\Documents\FantasyWebApp\Scraper\QB Data 2026.txt";
-    static readonly string TEFilePath = @"C:\Users\ptige\Documents\FantasyWebApp\Scraper\TE Data.txt";
-    static readonly string RBFilePath = @"C:\Users\ptige\Documents\FantasyWebApp\Scraper\RB Data.txt";
+    static readonly string TEFilePath = @"C:\Users\ptige\Documents\FantasyWebApp\Scraper\TE Data 2026.txt";
+    static readonly string RBFilePath = @"C:\Users\ptige\Documents\FantasyWebApp\Scraper\RB Data 2026.txt";
 
     static void Main()
     {
@@ -35,7 +35,7 @@ class GoogleSheetsUploader
 
         Dictionary<string, List<object>> headersMap = new Dictionary<string, List<object>>
         {
-            // find source for the data
+            // find source for the data >> FantasyData.com >> pull end of season stats from previous years NOT PROJECTIONS FOR CURRENT SZN
             { "WR", new List<object> { "RK", "Name", "Team", "Pos", "GP", "TGTS", "Rec", "Catch%", "YDs", "TDS", "Long", "YDs/TGT", "YDs/Rec", "ATT", "YDs", "AVG", "TD", "FUM", "LOST", "FPTS/G", "FPTS" } },
             { "TE", new List<object> { "RK", "Name", "Team", "Pos", "GP", "TGTS", "Rec", "Catch%", "YDs", "TDS", "Long", "YDs/TGT", "YDs/Rec", "ATT", "YDs", "AVG", "TD", "FUM", "LOST", "FPTS/G", "FPTS" } },
             { "QB", new List<object> { "RK", "Name", "Team", "Pos", "GP", "CMP", "ATT", "CMP%", "YDs", "AVG", "TDS", "INT", "LONG", "SACK", "RATING", "ATT", "YDs", "AVG", "TD", "FPTS/G", "FPTS" } },
@@ -46,31 +46,34 @@ class GoogleSheetsUploader
         do
         {
             Console.WriteLine("Which Table is being updated? (WR, QB, TE, RB)");
-            tableKey = Console.ReadLine().Trim().ToUpper();
+            tableKey = Console.ReadLine().Trim().ToUpper(); // get input
         }
-        while (!VerifyInput(tableKey));
+        while (!VerifyInput(tableKey)); // if invalid input ask again
 
-        string FilePath = filePaths[tableKey];
-        string SheetName = tableKey;
-        var headers = headersMap[tableKey];
+        string FilePath = filePaths[tableKey];  //determines which text file to read
+        string SheetName = tableKey;            //determines which spreadsheet to update
+        var headers = headersMap[tableKey];     //Map headers on spreadsheet based on input
 
         var headerRange = new ValueRange { Values = new List<IList<object>> { headers } };
 
         var headerRequest = service.Spreadsheets.Values.Update(headerRange, SpreadsheetId, $"{SheetName}!A1");
-        headerRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.UpdateRequest.ValueInputOptionEnum.RAW;
+        headerRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.UpdateRequest.ValueInputOptionEnum.RAW;    //take the input as is
         headerRequest.Execute();
 
         var rows = new List<IList<object>>();
         var currentRow = new List<object>();
 
+        //go through each line in the tect file
         foreach (var line in File.ReadLines(FilePath))
         {
-            var trimmed = line.Trim();
-            if (string.IsNullOrWhiteSpace(trimmed)) continue;
+            var trimmed = line.Trim();  //removes leading and trailing white spaces
+            if (string.IsNullOrWhiteSpace(trimmed)) continue; //continue when string is trimmmed
 
+            //splits input where it finds tabs (/t)
             var fields = System.Text.RegularExpressions.Regex.Split(trimmed, @"\t");
 
-            if (int.TryParse(fields[0], out _))
+            //converts string numbers to int numbers for spreadsheet math purposes
+            if (int.TryParse(fields[0], out _)) 
             {
                 if (currentRow.Count > 0)
                 {

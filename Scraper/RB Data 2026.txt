@@ -1,0 +1,240 @@
+1	
+Christian McCaffrey
+SF
+RB	17	311	1202	3.9	10	129	102	924	7	2	0	24.5	416.6
+2	
+Bijan Robinson
+ATL
+RB	17	287	1478	5.1	7	103	79	820	4	4	3	21.8	370.8
+3	
+Jahmyr Gibbs
+DET
+RB	17	243	1223	5.0	13	94	77	616	5	2	1	21.6	366.9
+4	
+Jonathan Taylor
+IND
+RB	17	323	1585	4.9	18	55	46	378	2	2	1	21.3	362.3
+5	
+De'Von Achane
+MIA
+RB	16	238	1350	5.7	8	85	67	488	4	1	0	20.2	322.8
+6	
+James Cook III
+BUF
+RB	17	309	1621	5.2	12	40	33	291	2	6	3	17.8	302.2
+7	
+Chase Brown
+CIN
+RB	17	232	1019	4.4	6	88	69	437	5	2	0	16.6	282.6
+8	
+Derrick Henry
+BAL
+RB	17	307	1595	5.2	16	21	15	150	0	4	3	16.4	279.5
+9	
+Kyren Williams
+LAR
+RB	17	259	1252	4.8	10	50	36	281	3	2	2	15.5	263.3
+10	
+Travis Etienne Jr.
+JAX
+RB	17	260	1107	4.3	7	52	36	292	6	1	0	14.9	253.9
+11	
+Ashton Jeanty
+LV
+RB	17	266	975	3.7	5	73	55	346	5	2	1	14.4	245.1
+12	
+Javonte Williams
+DAL
+RB	16	252	1201	4.8	11	51	35	137	2	2	2	15.2	242.8
+13	
+Josh Jacobs
+GB
+RB	15	234	929	4.0	13	44	36	282	1	3	2	15.8	237.1
+14	
+Saquon Barkley
+PHI
+RB	16	280	1140	4.1	7	50	37	273	2	1	1	14.5	232.3
+15	
+D'Andre Swift
+CHI
+RB	16	223	1087	4.9	9	48	34	299	1	2	2	14.3	228.6
+16	
+Kenny Gainwell
+PIT
+RB	17	114	537	4.7	5	85	73	486	3	2	1	13.0	221.3
+17	
+Jaylen Warren
+PIT
+RB	16	211	958	4.5	6	45	40	333	2	1	0	13.6	217.1
+18	
+Rico Dowdle
+CAR
+RB	17	236	1076	4.6	6	50	39	297	1	2	1	12.7	216.3
+19	
+Breece Hall
+NYJ
+RB	16	243	1065	4.4	4	48	36	350	1	2	2	13.0	207.7
+20	
+RJ Harvey
+DEN
+RB	17	146	540	3.7	7	58	47	356	5	1	1	12.2	206.6
+21	
+TreVeyon Henderson
+NE
+RB	17	180	911	5.1	9	42	35	221	1	1	1	12.1	206.2
+22	
+Kenneth Walker III
+SEA
+RB	17	221	1027	4.6	5	36	31	282	0	1	0	11.3	191.9
+23	
+Tony Pollard
+TEN
+RB	17	242	1082	4.5	5	41	33	206	0	4	3	10.9	185.8
+24	
+Zach Charbonnet
+SEA
+RB	16	184	730	4.0	12	24	20	144	0	0	0	11.3	181.4
+25	
+Rhamondre Stevenson
+NE
+RB	14	130	603	4.6	7	37	32	345	2	3	3	12.8	178.8
+26	
+Quinshon Judkins
+CLE
+RB	14	230	827	3.6	7	36	26	171	0	0	0	12.1	169.8
+27	
+David Montgomery
+DET
+RB	17	158	716	4.5	8	29	24	192	0	2	1	9.8	166.9
+28	
+Tyrone Tracy Jr.
+NYG
+RB	15	176	740	4.2	2	48	36	288	2	1	1	10.7	160.8
+29	
+Woody Marks
+HOU
+RB	16	196	703	3.6	3	36	24	208	3	1	0	9.4	151.1
+30	
+Kyle Monangai
+CHI
+RB	17	169	783	4.6	5	30	18	164	0	0	0	8.6	146.7
+31	
+Kareem Hunt
+KC
+RB	17	163	611	3.7	8	25	18	143	1	2	1	8.6	145.4
+32	
+Rachaad White
+TB
+RB	17	132	572	4.3	4	45	40	218	0	0	0	8.4	143.0
+33	
+Jacory Croskey-Merritt
+WAS
+RB	17	175	805	4.6	8	13	9	68	0	4	2	8.3	140.3
+34	
+Bucky Irving
+TB
+RB	10	173	588	3.4	1	35	30	277	3	1	1	13.8	138.5
+35	
+Omarion Hampton
+LAC
+RB	9	124	545	4.4	4	35	32	192	1	1	0	15.1	135.7
+36	
+Jordan Mason
+MIN
+RB	16	159	758	4.8	6	16	14	51	0	3	1	8.1	128.9
+37	
+Cam Skattebo
+NYG
+RB	8	101	410	4.1	5	32	24	207	2	1	1	16.0	127.7
+38	
+Chuba Hubbard
+CAR
+RB	15	134	511	3.8	1	39	30	223	3	1	1	8.4	125.4
+39	
+Tyler Allgeier
+ATL
+RB	17	143	514	3.6	8	16	14	96	0	0	0	7.2	123.0
+40	
+Blake Corum
+LAR
+RB	17	145	746	5.1	6	14	8	36	0	0	0	7.2	122.2
+41	
+Aaron Jones Sr.
+MIN
+RB	12	132	548	4.2	2	41	28	199	1	2	1	9.9	118.7
+42	
+Kimani Vidal
+LAC
+RB	13	155	643	4.1	3	22	16	136	1	1	0	9.1	117.9
+43	
+J.K. Dobbins
+DEN
+RB	10	153	772	5.0	4	14	11	37	0	0	0	11.6	115.9
+44	
+Tyjae Spears
+TEN
+RB	13	72	283	3.9	2	50	45	264	0	0	0	8.6	111.7
+45	
+Devin Singletary
+NYG
+RB	17	119	437	3.7	5	19	18	151	0	0	0	6.4	108.8
+46	
+Alvin Kamara
+NO
+RB	11	131	471	3.6	1	39	33	186	0	2	2	9.2	100.7
+47	
+Ty Johnson
+BUF
+RB	17	50	200	4.0	3	33	24	263	2	1	0	5.9	100.3
+48	
+Michael Carter
+ARI
+RB	13	92	333	3.6	1	45	33	267	0	0	0	7.6	99.0
+49	
+Emanuel Wilson
+GB
+RB	17	125	496	4.0	3	17	15	99	0	1	0	5.6	94.5
+50	
+Bam Knight
+ARI
+RB	12	82	269	3.3	4	31	22	160	1	1	1	7.7	92.9
+51	
+Chris Rodriguez Jr.
+WAS
+RB	13	112	500	4.5	6	4	3	30	0	0	0	7.1	92.0
+52	
+Sean Tucker
+TB
+RB	17	86	320	3.7	7	11	8	34	1	2	0	5.4	91.4
+53	
+Bhayshul Tuten
+JAX
+RB	15	83	307	3.7	5	14	10	79	2	2	1	5.9	88.6
+54	
+Nick Chubb
+HOU
+RB	15	122	506	4.1	3	20	13	67	0	0	0	5.9	88.3
+55	
+Dylan Sampson
+CLE
+RB	15	65	175	2.7	0	40	33	271	2	1	1	5.8	87.6
+56	
+Isiah Pacheco
+KC
+RB	13	118	462	3.9	1	26	19	101	1	0	0	6.7	87.3
+57	
+Samaje Perine
+CIN
+RB	15	84	382	4.5	3	21	17	87	0	3	2	5.2	77.9
+58	
+Jeremy McNichols
+WAS
+RB	17	44	221	5.0	1	31	25	196	0	1	1	4.3	72.7
+59	
+Isaiah Davis
+NYJ
+RB	16	43	236	5.5	1	28	21	186	0	0	0	4.5	71.2
+60	
+Justice Hill
+BAL
+RB	10	18	93	5.2	2	27	21	169	1	1	0	6.5	65.2
