@@ -31,5 +31,11 @@ namespace FantasyWebApp.Models
         }
 
         public System.Data.Entity.DbSet<FantasyWebApp.Models.Player> Players { get; set; }
+        public System.Data.Entity.DbSet<FantasyWebApp.Models.Draft> Drafts { get; set; }
+        public System.Data.Entity.DbSet<FantasyWebApp.Models.DraftPick> DraftPicks { get; set; }
+        public System.Data.Entity.DbSet<FantasyWebApp.Models.DraftPlayer> DraftPlayers { get; set; }
+        public System.Data.Entity.DbSet<FantasyWebApp.Models.DraftTeam> DraftTeams { get; set; }
+        public System.Data.Entity.DbSet<FantasyWebApp.Models.LeagueScoringRules> LeagueScoringRules { get; set; }
+
     }
 }
